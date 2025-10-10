@@ -1,0 +1,12 @@
+Une page web statique intègre des technologies telles que HTML, JAVASCRIPT,CSS
+HTML
+signifie HyperText Markup Language, est le langage de balisage standard utilisé pour créer et structurer le contenu des pages web</p>
+CSS
+signifie Cascading Style Sheets est un langage informatique qui décrit la présentation des documents HTML
+JAVASCRIPT
+JavaScript est un langage de programmation de script principalement employé dans les pages web interactives 
+       
+Une page web dynamique est une page web générée à la demande et sont fréquemment écrits avec les langages PHP, JSP ou ASP
+PHP
+PHP est un langage de programmation open-source interprété côté serveur, essentiellement utilisé pour la création de pages Web dynamiques 
+  

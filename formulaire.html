@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>CV de candidature</h1>
+    <form action="" method="post">
+       <fieldset>
+            <!-- Information personnelles-->
+            <legend>Informations personnelles</legend>
+            <label for="n"> Nom et prenom
+                <input class="cl2" type="text" name="np" id="np"  required >
+            </label>
+            <br><br>  
+            <label for=""> Age   
+                <input class="cl2" type="number" name="np" id="ag" min="18" max="30" step="0.01">
+            </label>
+            <br><br>
+            <label for="">Email
+                <input class="cl2" type="email" name="email" id="em" placeholder="userame@server.domain" required>
+            </label>
+            <br><br>
+            <label for=""> Date de naissance
+                <input type="date" name="" id="" required >
+            </label>
+            <br><br>
+            <label for="">Genre
+                <input type="radio" name="rass" id="ra" checked value="homme" ><label for="">Homme</label>
+                <input type="radio" name="rass" id="ra1" value="femme"> <label for="">Femme</label>
+            </label>
+            <br><br>
+            <label for="pays">
+                <select name="pays" id="pays" class="cl2">
+                    <optgroup label="Europe">
+                        <option value="France">France</option>
+                        <option value="Belgique">Belgique</option>
+                        <option value="Italie">Italie</option>
+                    </optgroup>
+                    <optgroup label="Maghreb">
+                        <option value="Tunisia">Tunisia</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Morroco">Morroco</option>
+                    </optgroup>
+                </select>
+            </label>
+       </fieldset> 
+       <fieldset>
+            <!-- Competence-->
+            <legend>Competences</legend>
+            <label for="">Arabic
+                <input type="checkbox" name="langue" id=""><input type="range" name="ra" id="ra" step="1">
+            </label>
+            <br><br>
+            <label for="">French
+                <input type="checkbox" name="langue" id=""><input type="range" name="rf" id="rf" step="1">
+            </label>
+            <br><br>
+            <label for="">English
+                <input type="checkbox" name="langue" id=""><input type="range" name="re" id="re" step="1">
+            </label>
+            <br><br>
+            <label for="">Language de Programmation
+                <input list="Lang"type="text" name="d" id="d"  >
+                <datalist id="Lang" class="cl2" name="d2">
+                    <option value="Python"></option>
+                    <option value="C"></option>
+                    <option value="javascript"></option>
+                </datalist>
+            </label>
+       </fieldset>
+       <fieldset>
+            <!-- Information de connnxion-->
+            <legend>Information de connexion</legend>
+            <label for="">Psuedo
+                <input type="text" name="cl2" id="ps" readonly value="wink">
+            </label>
+            <label for="">Mot de passe
+                <input type="password" name="ps" id="pw" class="cl2" readonly value="sa7a">
+            </label> 
+
+            <br><label for=""><i>Commentaire</i></label><br>
+            <label for="">
+                <textarea name="" id="" rows="10" cols="50" placeholder="Envoyer voter Commentaire"> </textarea>
+            </label>
+       </fieldset>
+        <input type="reset" value="Effacer">
+        <button type="submit" disabled>Envoyer</button>
+    </form>
+</body>
+</html>
