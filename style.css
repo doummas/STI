@@ -20,14 +20,48 @@ section{
     background-image: linear-gradient(yellow,red);
     width: 70%;
     height: 500px;
+    float: left;
     
 }
 aside{
     background-color: green;
     height: 500px;
     width: 30%;
+    float: right;
 }
 footer{
     background-color: blue;
-    height: 200px;
+    height: 220px;
+    clear: both;
+}
+nav ul li{
+    list-style-type: none;
+    width: 150px;
+    display: inline-block;
+    border-radius: 10px 100px;
+    margin-left: 220px;
+    margin-top: 70px;
+    padding: 8px ;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgb(80, 82, 54);
+}
+
+
+iframe{
+    width: 100%;
+    height: 100%;
+
+
+}
+table{
+    width: 500px;
+    margin:0 auto;
+    border-color: sienna;
+}
+
+.pl{
+    clear: both;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
 }
