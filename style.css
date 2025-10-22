@@ -1,3 +1,4 @@
+/* css pour la page index.html*/
 header{
     background-color: blue;
     height: 200px;
@@ -9,19 +10,19 @@ header{
     text-transform: capitalize;
     font-style: italic;
 }
-
 nav{
     background-color: rgb(289, 184, 56);
     height: 200px;
     
 }
-
 section{
     background-image: linear-gradient(yellow,red);
     width: 70%;
     height: 500px;
     float: left;
-    
+    /* only for inline block
+    display: inline-block;
+    vertical-align: middle:*/ 
 }
 aside{
     background-color: green;
@@ -30,9 +31,7 @@ aside{
     float: right;
 }
 footer{
-    background-color: blue;
-    height: 220px;
-    clear: both;
+    text-align: center;
 }
 nav ul li{
     list-style-type: none;
@@ -45,11 +44,16 @@ nav ul li{
     text-align: center;
     box-shadow: 5px 5px 15px rgb(80, 82, 54);
 }
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
 
-
+}
 iframe{
     width: 100%;
     height: 100%;
+    background-color: white;
 
 
 }
@@ -58,10 +62,27 @@ table{
     margin:0 auto;
     border-color: sienna;
 }
-
 .pl{
-    clear: both;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: cursive;
+    display: block;
+    margin: 0 auto;
+}
+/* css pour page media*/
+#pic{
+    display: inline-block;
+} 
+/* css pour acceuil*/
+#web_dynamic{
+    background-image: url(php.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    height: 300px;
+    background-position: center;
+}
+#web_style{
+    background-image: url(htmlcssjs.png);
+    height: 300px;
+
 }
