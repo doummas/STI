@@ -1,0 +1,5 @@
+bodure[
+    epaisseur      border_widht
+    color          border_color
+    pointille      border-style
+]

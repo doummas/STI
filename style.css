@@ -70,9 +70,12 @@ table{
     margin: 0 auto;
 }
 /* css pour page media*/
-#pic{
-    display: inline-block;
-} 
+.pic1{
+    border-radius: 10%;
+    width: 300px;
+    height: 200px;
+
+}
 /* css pour acceuil*/
 #web_dynamic{
     background-image: url(php.png);
@@ -85,4 +88,21 @@ table{
     background-image: url(htmlcssjs.png);
     height: 300px;
 
+}
+/* css pour la page formulaire*/
+legend{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 3px 2px green;
+}
+label{
+    display: inline-block;
+    text-align: center;
+    width: 180px;
+    
+}
+.cl2{
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    margin-bottom: 3px;
 }

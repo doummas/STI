@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,28 +13,24 @@
        <fieldset>
             <!-- Information personnelles-->
             <legend>Informations personnelles</legend>
-            <label for="n"> Nom et prenom
-                <input class="cl2" type="text" name="np" id="np"  required >
-            </label>
+            <label for="n"> Nom et prenom</label>
+             <input class="cl2" type="text" name="np" id="np"  required >
             <br><br>  
-            <label for=""> Age   
-                <input class="cl2" type="number" name="np" id="ag" min="18" max="30" step="0.01">
-            </label>
+            <label for=""> Age   </label>
+            <input class="cl2" type="number" name="np" id="ag" min="18" max="30" step="0.01">
             <br><br>
-            <label for="">Email
-                <input class="cl2" type="email" name="email" id="em" placeholder="userame@server.domain" required>
-            </label>
+            <label for="">Email</label>
+            <input class="cl2" type="email" name="email" id="em" placeholder="userame@server.domain" required>
             <br><br>
-            <label for=""> Date de naissance
-                <input type="date" name="" id="" required >
-            </label>
+            <label for=""> Date de naissance</label>
+            <input type="date" name="" id="" required >
             <br><br>
-            <label for="">Genre
-                <input type="radio" name="rass" id="ra" checked value="homme" ><label for="">Homme</label>
-                <input type="radio" name="rass" id="ra1" value="femme"> <label for="">Femme</label>
-            </label>
+            <label for="">Genre</label>
+                <br>
+                <input type="radio" name="rass" id="ra" checked value="homme" >homme
+                <input type="radio" name="rass" id="ra1" value="femme"> femme
             <br><br>
-            <label for="pays">
+            <label for="pays"></label>
                 <select name="pays" id="pays" class="cl2">
                     <optgroup label="Europe">
                         <option value="France">France</option>
@@ -46,46 +43,39 @@
                         <option value="Morroco">Morroco</option>
                     </optgroup>
                 </select>
-            </label>
        </fieldset> 
        <fieldset>
             <!-- Competence-->
             <legend>Competences</legend>
-            <label for="">Arabic
-                <input type="checkbox" name="langue" id=""><input type="range" name="ra" id="ra" step="1">
-            </label>
+            <label for="">Arabic</label>
+            <input type="checkbox" name="langue" id=""><input type="range" name="ra" id="ra" step="1">
             <br><br>
-            <label for="">French
-                <input type="checkbox" name="langue" id=""><input type="range" name="rf" id="rf" step="1">
-            </label>
+            <label for="">French</label>
+            <input type="checkbox" name="langue" id=""><input type="range" name="rf" id="rf" step="1">
             <br><br>
-            <label for="">English
-                <input type="checkbox" name="langue" id=""><input type="range" name="re" id="re" step="1">
-            </label>
+            <label for="">English</label>
+            <input type="checkbox" name="langue" id=""><input type="range" name="re" id="re" step="1">
             <br><br>
-            <label for="">Language de Programmation
-                <input list="Lang"type="text" name="d" id="d"  >
+            <label for="">Language de Programmation</label>
+            <input list="Lang"type="text" name="d" id="d"  >
                 <datalist id="Lang" class="cl2" name="d2">
                     <option value="Python"></option>
                     <option value="C"></option>
                     <option value="javascript"></option>
                 </datalist>
-            </label>
        </fieldset>
        <fieldset>
             <!-- Information de connnxion-->
             <legend>Information de connexion</legend>
-            <label for="">Psuedo
-                <input type="text" name="cl2" id="ps" readonly value="wink">
-            </label>
+            <label for="">Psuedo</label>
+            <input type="text" name="cl2" id="ps" readonly value="wink">
             <label for="">Mot de passe
-                <input type="password" name="ps" id="pw" class="cl2" readonly value="sa7a">
             </label> 
-
+            <input type="password" name="ps" id="pw" class="cl2" readonly value="sa7a">
             <br><label for=""><i>Commentaire</i></label><br>
             <label for="">
-                <textarea name="" id="" rows="10" cols="50" placeholder="Envoyer voter Commentaire"> </textarea>
             </label>
+            <textarea name="" id="" rows="10" cols="50" placeholder="Envoyer voter Commentaire"> </textarea>
        </fieldset>
         <input type="reset" value="Effacer">
         <button type="submit" disabled>Envoyer</button>
