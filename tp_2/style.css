@@ -8,7 +8,12 @@
 img{
     border-radius: 10px;
     vertical-align: middle;
-    
+    transition-property: transform ;
+    transition-duration: 6s;
+    transition-delay: 0.5s;
+}
+img:hover{
+    transform: skew(30deg)
 }
 #index_h1{
     border-radius: 10px;
@@ -16,30 +21,38 @@ img{
     text-transform: uppercase;
     font-style: italic;
     font-weight: bold;
-    color: white;
+    color: rgb(255, 255, 255);
     vertical-align: middle;
+    transition-property: transform,color;
+    transition-delay: 0.5s;
+    transition-duration: 1s,5s;
+}
+#index_h1:hover{
+    transform:scale(1.5) ;
+    color: gold;
 }
 /**  nav**/
-
+ul{
+    text-align: center;
+}
 ul li{
     list-style: none;
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
     border-radius: 8px 100px;
-    
+    vertical-align: middle;
     width: 200px;
-    text-align: center; 
+    background-color: skyblue;
     box-shadow: 0px 0px 15px blue;
+    transition-property: all;
 }
 ul li:hover{
     transform: rotateX(30deg);
+    background-color: red;
 }
-ul li a:link{
-    text-align: center;
+ul li a{
     text-decoration: none;
-    color: skyblue;
-    margin: auto;
-    color: red;
+    /**color: skyblue;**/
+    
     
 }
 ul li a:visited{
