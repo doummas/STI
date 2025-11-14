@@ -1,0 +1,96 @@
+.container{
+    background-color:aqua;
+    height:1000px;
+    width: 400px;
+    padding:20px;
+    
+
+}
+.box{
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    width:200px;
+    margin:0 auto;
+    margin-top: 10px;
+
+}
+.un{
+    background-color:red;
+    height:100px;
+    position: relative;
+    left: 150px;
+    top: 200px;
+}
+
+    
+
+.deux{
+    background-color:blue;
+    height:100px;
+    position: absolute;
+    left: 200px;
+    top: 300px;
+  
+    
+}
+.trois{
+    background-color:green;
+    height:100px;
+    position: fixed;
+    right:100px;
+    bottom: 400px;
+    animation-name: sa7a;
+    animation-duration: 3s;
+    animation-iteration-count: 5;
+}
+@keyframes sa7a{
+    50%{
+        background-color:red ;
+    }
+    100%{
+        background-color: ye;
+    }
+}
+.quatre{
+    background-color:goldenrod;
+    height:100px;
+    position: sticky;
+    top: 300px;
+   
+    
+}
+.cinq{
+    background-color:yellow;
+    height:100px;
+   
+    
+}
+#titre{
+
+text-align: center; 
+animation-name: sam;  
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+@keyframes sam {
+0%{
+    opacity: 1;
+
+}
+50%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+
+}
+img{
+    transition-property: all;
+    transition: 2s;
+}
+img:hover{
+    filter: blur(2px);
+    border-radius: 50%;
+}
