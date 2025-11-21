@@ -1,0 +1,57 @@
+
+header h1{
+    text-align: center;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-timing-function: 3;
+}
+@keyframes animation {
+    0%{
+        scale: 1.5;
+    }
+    50%{
+        scale: 1;
+    }
+}
+header p {
+    text-shadow: 2px 3px 15px violet;
+    transition-property: all;
+    transition-duration: 2s;
+}
+header p:hover{
+    rotate: 20deg;
+}
+
+
+
+#section1 {
+    position: relative;
+    width: 50%;
+    background-color: aqua;
+    height: 100%;
+}
+iframe{
+    width: 100%;
+}
+#section2{
+    position: absolute;
+    background-color: beige;
+    width: 50%;
+    height: 100%;
+    top: 0px;
+    right: 0px
+    
+    
+}
+#s_div{
+    width: 100%;
+    height: 400px;
+    background-color: gray;
+    position: relative;
+}
+
+
+/*tp1 */
+input{
+    border-width: 2px ;
+}

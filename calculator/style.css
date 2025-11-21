@@ -1,0 +1,42 @@
+#calculator{
+    margin: 0 auto;
+    background-color: gray;
+    width: 500px;
+    height: 600px;
+}
+#natija{
+    display: block;
+    margin: 0 auto;
+    background-color: aliceblue;
+    width: 95%;
+    text-align: center;
+    margin-top: 15px;
+    height: 20%;
+    font-size: 40px;
+    padding-top: 50px;
+    border-color: black;
+} 
+.bu1{
+    width: 150px;
+    margin-left: 9px;
+    height: 100px;
+    border-radius: 20px;
+    border-color: black;
+}
+.pm{
+    width: 150px;
+    margin-left: 9px;
+    height: 50px;
+    border-radius: 20px;
+    border-color: black;
+}
+#ce{
+    position: relative;
+    left: 325px;
+    bottom: 100px;
+    width: 150px;
+    margin-left: 9px;
+    height: 100px;
+    border-radius: 20px;
+    border-color: black;
+}
