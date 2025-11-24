@@ -47,6 +47,34 @@ b.onclick = function () {
 
 }*/
 
+let a = Number(prompt("A= "))
+
+do 
+{
+    let a = Number(prompt("A= "))
+}
+
+
+let b = Number(prompt("B= "))
+
+while(typeof a != "number" || b == ""){
+    let b = Number(prompt("B= "))
+}
+
+let s;
+let p;
+let d;
+
+
+s = a+b
+p = a*b
+d = a%b
+alert("S="+s)
+alert("P="+p)
+alert("D="+d)
+
+
+
 
 
 

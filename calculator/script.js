@@ -1,14 +1,14 @@
-const one = document.getElementById("one")
-const nati = document.getElementById("natija")
-const two = document.getElementById("two")
-var count = 0
+const display = document.getElementById("natija")
 
-one.onclick = function(){
-    count += 1
-    nati.innerHTML = count
+const ce = document.getElementById("ce")
 
+function appendtd(input){
+    display.innerHTML += input
 }
-two.onclick = function() {
-    count +=2
-    nati.innerHTML = count
+
+function calculate(){
+    display.textContent = eval(display.textContent)
+}
+ce.onclick = function(){
+    display.innerHTML =""
 }
