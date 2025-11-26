@@ -47,19 +47,19 @@ b.onclick = function () {
 
 }*/
 
-let a = Number(prompt("A= "))
 
 do 
 {
     let a = Number(prompt("A= "))
 }
+while (isNaN == false)
 
-
-let b = Number(prompt("B= "))
-
-while(typeof a != "number" || b == ""){
+do 
+{
     let b = Number(prompt("B= "))
 }
+while (isNaN == false)
+
 
 let s;
 let p;
@@ -72,6 +72,9 @@ d = a%b
 alert("S="+s)
 alert("P="+p)
 alert("D="+d)
+
+
+
 
 
 

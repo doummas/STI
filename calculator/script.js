@@ -7,7 +7,7 @@ function appendtd(input){
 }
 
 function calculate(){
-    display.textContent = eval(display.textContent)
+    display.innerHTML = eval(display.innerHTML)
 }
 ce.onclick = function(){
     display.innerHTML =""
