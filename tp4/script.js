@@ -48,7 +48,7 @@ b.onclick = function () {
 }*/
 
 
-do 
+/*do 
 {
     let a = Number(prompt("A= "))
 }
@@ -71,14 +71,75 @@ p = a*b
 d = a%b
 alert("S="+s)
 alert("P="+p)
-alert("D="+d)
+alert("D="+d)*/
 
 
 
 
 
 
+/*TPPPPPP22222*/
 
+/*function saisir(){
+    let a = prompt("Donner A")
+    return a
+}
+
+function pair(x){
+    if (x % 2 == 0 ){
+    alert(`${x} est pair`)
+}
+else {
+    alert(`${x} est impaire`)
+}
+}
+a=saisir()
+pair(a)*/
+
+function saisir(){
+    do{
+      var a = prompt("Donner A")  
+    }while (0>a || a>2 || a=="")
+    return a
+}
+
+function joue(a){
+    let b = Math.round(Math.random() *(2))
+    /*if (Math.abs(a-b) == 2){
+        alert("le joueur qui a proposé le plus grand nombre gagne")
+    }
+    else if (Math.abs(a-b) == 1){
+        alert("le joueur qui a proposé le plus petit nombre gagne")
+    }
+    else{
+        alert("qu’aucun joueur n’a gagné.")
+    }*/
+   var diff = Math.abs(a-b)
+   switch(diff){
+    case 1:
+        if (a>b){
+            alert("Utilisateur gagne")
+        }
+        else{
+            alert("l'ordinateur gagne")
+        }
+    break
+    case 2 :
+        if (b<a){
+            alert(" ordinateur  rb7")
+        }
+        else{
+            alert("rb7t")
+        }
+        break
+    default : alert("7ad mrb7")
+   }
+   
+
+}
+
+a=saisir()
+joue(a)
 
 
 
