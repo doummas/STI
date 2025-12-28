@@ -1,0 +1,30 @@
+div{
+    width: 500px;
+    text-align:center;
+    height: 300px;
+    border-style: solid;
+    border-color: red;
+    margin: 0 auto;
+}
+#display{
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+label{
+    font-weight: bold;
+}
+button{
+    display: block;
+    background-color: red;
+    margin: 0 auto;
+    height: 30px;
+    width: 70px;
+    font-weight: bold;
+}
+h3{
+    color: blue;
+}
