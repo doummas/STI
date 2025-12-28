@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="calculator">
-        <h3 id="natija">0</h3>
+        <h3 id="natija"></h3>
         <div id="numbers">
             <table>
                 <tr>
@@ -39,10 +39,10 @@
                 <td><button type="submit" id="dharb" class="pm" onclick="appendtd('*')">*</button></td>
             </tr>
             <tr>
-                <td colspan="2"><button onclick="appendtd('=')" class="pm" id="equal" >=</button></td>
+                <td colspan="2"><button onclick="calculate()" class="pm" id="equal" >=</button></td>
             </tr>
         </table>
-        <button type="reset" id="ce">CE</button>
+        <button type="submit" id="ce" onclick="clear()">CE</button>
     </div>
 </body>
 <script src="script.js"></script>

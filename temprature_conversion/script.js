@@ -6,12 +6,14 @@ let temp
 function conver(){
     if (to_fahrenheit.checked){
         temp = Number(display.value) * 1.8 + 32
-        result.innerHTML=temp + "°"
+        result.innerHTML=temp + "°C"
     }
     else if (to_clesius.checked){
         temp  = Number((display.value) - 32 ) / 1.8
-        result.innerHTML=temp + "F"
-
+        result.innerHTML=temp + "°F"
+    }
+    else {
+        result.innerHTML = " Select a unit"
     }
     
 
