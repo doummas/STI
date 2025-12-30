@@ -22,17 +22,20 @@ function pre_cal(type){
         case "/":
             return Number(equa.substring(0,equa.indexOf(type))) / Number(equa.substring(equa.indexOf(type)+1,equa.length))*/
     let arr = []
-    let ne = String(natija.innerHTML)
-    ne =  ne + type 
-    while (ne.lenght != 0){
-        arr.push(ne.substring(0,ne.indexOf("+")))
-        ne = ne.substring(ne.indexOf("+")+1,ne.lenght)
+    let ne = type + natija.innerHTML + type 
+    for (let i=1 ; i<ne.length;i++){
+        if (ne[i]==type){
+            arr.push(Number(ne.substring(0,i)))
+            ne = ne.substring(i,)
+            i=0
+        }
     }
+
 
         
     
         
-    g
+    
     arr.push()
     let soo = 0 ;
     if (type == "+"){
