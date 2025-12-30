@@ -12,7 +12,7 @@ function appendtd(n){
     natija.innerHTML +=n
 }
 function pre_cal(type){
-    switch(type){
+    /*switch(type){
         case "+":
             return Number(equa.substring(0,equa.indexOf(type))) + Number(equa.substring(equa.indexOf(type)+1,equa.length)) 
         case "*":
@@ -20,13 +20,36 @@ function pre_cal(type){
         case "-":
             return Number(equa.substring(0,equa.indexOf(type))) - Number(equa.substring(equa.indexOf(type)+1,equa.length))
         case "/":
-            return Number(equa.substring(0,equa.indexOf(type))) / Number(equa.substring(equa.indexOf(type)+1,equa.length))
-
-
+            return Number(equa.substring(0,equa.indexOf(type))) / Number(equa.substring(equa.indexOf(type)+1,equa.length))*/
+    let arr = []
+    for (let i=0 ; i<natija.innerHTML.length; i++){
+        if (String(natija.innerHTML[i]) == type){
+            continue
+        }
+        arr.push(natija.innerHTML[i])
     }
+    let soo = 0
+    switch(type){
+        case "+":
+            for (let i=0 ; i<arr.length;i++){
+                soo +=Number(arr[i])}
+        /*case "*":
+            for (let i=0 ; i<arr.length;i++){
+                soo *=Number(arr[i])}
+        case "-":
+            for (let i=0 ; i<arr.length;i++){
+                soo -= Number(arr[i])}
+        case "/":
+            for (let i=0 ; i<arr.length;i++){
+                soo /=Number(arr[i])}*/
     
 
+    }
+    return soo
 }
+    
+    
+
 function calculate(){
     equa = String(natija.innerHTML)
     if (equa.indexOf("+") != -1){
