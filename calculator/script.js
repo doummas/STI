@@ -22,27 +22,44 @@ function pre_cal(type){
         case "/":
             return Number(equa.substring(0,equa.indexOf(type))) / Number(equa.substring(equa.indexOf(type)+1,equa.length))*/
     let arr = []
-    for (let i=0 ; i<natija.innerHTML.length; i++){
-        if (String(natija.innerHTML[i]) == type){
-            continue
-        }
-        arr.push(natija.innerHTML[i])
+    let ne = String(natija.innerHTML)
+    ne =  ne + type 
+    while (ne.lenght != 0){
+        arr.push(ne.substring(0,ne.indexOf("+")))
+        ne = ne.substring(ne.indexOf("+")+1,ne.lenght)
     }
-    let soo = 0
+
+        
+    
+        
+    g
+    arr.push()
+    let soo = 0 ;
     if (type == "+"){
         for (let i=0 ; i<arr.length;i++){
-            soo +=Number(arr[i])}}
-    else if (type == "*"){
-        for (let i=0 ; i<arr.length;i++){
-            soo *=Number(arr[i])}}
-    else if (type == "/"){
-        soo /=Number(arr[i])}
-    else if (type == "-"){
-        soo -= Number(arr[i])}
-    
-    return soo
+            soo += Number(arr[i])}}
 
-    }
+    else if (type == "*"){
+        soo = arr[0]
+        for (let i=1 ; i<arr.length;i++){
+            soo *= Number(arr[i])}}
+
+    else if (type == "/"){
+        soo = arr[0]
+        for (let i=1 ; i<arr.length;i++){
+            soo /=Number(arr[i])}}
+            
+    else if (type == "-"){
+        soo = arr[0]
+        for (let i=1 ; i<arr.length;i++){
+            soo -=Number(arr[i])}
+        }
+
+
+    console.log(arr)
+    return soo
+        }
+    
     
     
 
