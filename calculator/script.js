@@ -1,9 +1,12 @@
 const natija = document.getElementById("natija")
 
 
-function clear(){
+function clear_dsiplay(){
     natija.innerHTML = ""
 }
+function del(){
+    natija.innerHTML = String(natija.innerHTML.substring(0,natija.innerHTML.length - 1))
+    }
 
 function appendtd(n){
     natija.innerHTML +=n
@@ -11,17 +14,13 @@ function appendtd(n){
 function pre_cal(type){
     switch(type){
         case "+":
-            return Number(equa.substring(0,equa.indexOf(type))) + Number(equa.substring(equa.indexOf(type)+1,equa.length))
-            break 
+            return Number(equa.substring(0,equa.indexOf(type))) + Number(equa.substring(equa.indexOf(type)+1,equa.length)) 
         case "*":
             return Number(equa.substring(0,equa.indexOf(type))) * Number(equa.substring(equa.indexOf(type)+1,equa.length))
-            break
         case "-":
             return Number(equa.substring(0,equa.indexOf(type))) - Number(equa.substring(equa.indexOf(type)+1,equa.length))
-            break
         case "/":
             return Number(equa.substring(0,equa.indexOf(type))) / Number(equa.substring(equa.indexOf(type)+1,equa.length))
-            break
 
 
     }
