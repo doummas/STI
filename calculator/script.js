@@ -25,18 +25,20 @@ function pre_cal(type){
     let ne = type + natija.innerHTML + type 
     for (let i=1 ; i<ne.length;i++){
         if (ne[i]==type){
-            arr.push(Number(ne.substring(0,i)))
-            ne = ne.substring(i,)
+            arr.push(ne.substring(0,i))
+            ne = ne.substring(i+1,)
             i=0
         }
     }
+    console.log()
+    arr[0] = natija.innerHTML.substring(0, natija.innerHTML.indexOf(type))
 
 
         
     
         
     
-    arr.push()
+
     let soo = 0 ;
     if (type == "+"){
         for (let i=0 ; i<arr.length;i++){
