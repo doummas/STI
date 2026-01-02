@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password generator</title>
+</head>
+<body>
+    <header>
+        <h1 id="header_h1">Password generator</h1>
+    </header>
+    <main>
+        <label for="length">Lenght</label>
+        <input type="number" name="length" id="length" value="6" min="6" max="45"><br>
+        <label for="lowercase">Lowercase</label>
+        <input type="radio" name="lowercase" id="lowercase" value="1" checked>yes
+        <input type="radio" name="lowercase" id="lowercase" value="0">no <br>
+        <label for="uppercase">Uppercase</label>
+        <input type="radio" name="uppercase" id="uppercase" value="2">yes
+        <input type="radio" name="uppercase" id="uppercase" value="0">no <br>
+        <label for="numbers">Numbers</label>
+        <input type="radio" name="numbers" id="numbers" value="4">yes
+        <input type="radio" name="numbers" id="numbers" value="0">no <br>
+        <label for="symbole">Symbole</label>
+        <input type="radio" name="symbole" id="symbole" value="8">yes
+        <input type="radio" name="symbole" id="symbole" value="0">no
+        <button type="submit" onclick="generate()">submit</button>
+        <h3>Your password below</h3>
+        <h4 id="display"></h4>
+
+
+
+
+
+
+
+
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
