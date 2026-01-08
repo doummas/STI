@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    background-image: url(monguela.jpeg);
+    /*background-repeat: no-repeat;*/ 
+}
+button{
+    width: 80px;
+    background-color: black;
+    color: white;
+}
+h1{
+    background-color: tomato;
+    width: 250px;
+    margin: 0  auto;
+    position: relative;
+    top: 300px;
+}
