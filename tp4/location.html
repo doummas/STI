@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="">
+        <fieldset>
+            <legend>Cordonnees</legend>
+            <table>
+                <tr>
+                    <td>CIN:</td>
+                    <td><input type="text" name="" id="CIN"></td>
+                </tr>
+                <tr>
+                    <td>Nom:</td>
+                    <td><input type="text" name="" id="nom"></td>
+                </tr>
+                <tr>
+                    <td>Prenom</td>
+                    <td><input type="text" name="" id="prenom"></td>
+                </tr>
+                <tr>
+                    <td>Adresse Email</td>
+                    <td><input type="text" name="" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Telephone</td>
+                    <td><input type="number" name="" id=""></td>
+                </tr>
+
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Location</legend>
+            <table>
+                <tr>
+                    <td>Date Location</td>
+                    <td><input type="text" name="" id=""></td>
+                    <td>Model</td>
+                    <td>
+                        <select name="pays" id="">
+                            <optgroup label="model | Prix par jour">
+                                <option value="90" onchange="choi()" name="p" >Clio | 90</option>
+                                <option value="120" onchange="choi()" name="p" >406 | 120</option>
+                                <option value="70" onchange="choi()" name="p" >206 | 70</option>
+                                <option value="50" onchange="choi()" name="p" >Fiat | 50</option>
+                            </optgroup>
+                            
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Duree de location</td>
+                    <td></td>
+                    <td><input type="radio" name="du" id="du" value="3">3</td>
+                    <td><input type="radio" name="du" id="" value="5">5</td>
+                    <td><input type="radio" name="du" id="" value="15">15</td>
+                </tr>
+                <tr>
+                    <td>Montant a payer</td>
+                    <td><input type="text" name="" id="mont" onfocus="prix()"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Code Captcha</legend>
+            <table>
+                <tr>
+                    <td>Generer un code Captcha</td>
+                    
+                </tr>
+                <tr>
+                    <td><button type="submit" onclick="valider()">Valider</button></td>
+                    <td><button type="reset">Annuler</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+<script src="script2.js"></script>
+</html>

@@ -6,7 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!--<form action="" method="">--->
+            <legend>Formulaire</legend>
+            <table>
+                <tr>
+                    <td>Nom et prenom</td>
+                    <td><input type="text" name="" id="pre"  onblur="majus()"></td>
+                </tr>
+                <tr>
+                    <td>Nombres de caractere tapes</td>
+                    <td><input type="number" name="" id="nombre" ></td>
+                </tr>    
+                <tr>
+                    <td>
+                    <button type="reset">vider</button>
+                    </td>
+                    <td>
+                    <button type="submit" id="b" onclick="afficher()" >afficher</button>
+                    </td>
+                </tr>
+            </table>
+    <!--</form>-->
+
+
+    <input type="range" name="" id="r" min="0" max="100" oninput="plus()">
+    <input type="number" name="" id="n" oninput="plus()"> <label for="">=</label>
+    <output id="out">55</output><br>
+    <output id="o"></output>
 </body>
 <script src="script.js"></script>
 </html>

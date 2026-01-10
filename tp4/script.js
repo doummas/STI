@@ -96,7 +96,7 @@ else {
 a=saisir()
 pair(a)*/
 
-function saisir(){
+/*function saisir(){
     do{
       var a = prompt("Donner A")  
     }while (0>a || a>2 || a=="")
@@ -105,7 +105,7 @@ function saisir(){
 
 function joue(a){
     let b = Math.round(Math.random() *(2))
-    /*if (Math.abs(a-b) == 2){
+    if (Math.abs(a-b) == 2){
         alert("le joueur qui a proposé le plus grand nombre gagne")
     }
     else if (Math.abs(a-b) == 1){
@@ -114,7 +114,7 @@ function joue(a){
     else{
         alert("qu’aucun joueur n’a gagné.")
     }*/
-   var diff = Math.abs(a-b)
+   /*var diff = Math.abs(a-b)
    switch(diff){
     case 1:
         if (a>b){
@@ -140,6 +140,34 @@ function joue(a){
 
 a=saisir()
 joue(a)
+*/
+
+
+
+
+
+
+/*function majus(){
+    document.getElementById("pre").value = document.getElementById("pre").value.toUpperCase()
+    document.getElementById("nombre").value = document.getElementById("pre").value.length
+}
+
+function afficher(){
+    alert(`Bravo ${document.getElementById("pre").value}`)
+}
+function al(){
+    
+    alert("saisir votre Nom et Prenom")
+    
+
+}*/
+
+function plus(){
+    let range = Number(document.getElementById("r").value)
+    let num = Number(document.getElementById("n").value)
+    document.getElementById("out").innerHTML = range + num
+    document.getElementById("o").innerHTML = range
+}
 
 
 
