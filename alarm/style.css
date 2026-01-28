@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+}
+h4{
+    margin: 0 auto;
+    width: 200px;
+    font-weight: bolder;
+}
+main{
+    border-radius: 10%;
+    border-color: red;
+    width: 300px;
+    margin: 0 auto;
+    border-style: solid;
+}
+button{
+    width: 100px;
+    border-radius: 10%;
+    height: 30px;
+    margin: 10px;
+}
+#start{
+    background-color: rgb(60, 211, 60);
+    font-weight: bold;
+    color: aliceblue;
+}
+#stop{
+   background-color: rgb(238, 63, 44);
+    font-weight: bold;
+    color: aliceblue; 
+}
+#reset{
+    background-color: rgb(17, 90, 224);
+    font-weight: bold;
+    color: aliceblue;
+}

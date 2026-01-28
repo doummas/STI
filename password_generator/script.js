@@ -73,6 +73,10 @@ function generate(){
             new_arr = [...u,...s]
             random_pass(new_arr,len)
             break
+        case 11:
+            new_arr = [...l,...u,...s]
+            random_pass(new_arr,len)
+            break
         case 14 :
             new_arr = [...u,...n,...s]
             random_pass(new_arr,len)

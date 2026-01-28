@@ -1,44 +1,113 @@
 function valider(){
     let cin = String(document.getElementById("CIN").value)
-    if (cin.length != 8 || (cin.indexOf("06") != 0 && cin.indexOf("01") != 0)){
+    if (cin.length != 8 || (cin.indexOf("06") != 0 && cin.indexOf("01") != 0) && /*!chif(cin)*/ (isNaN(cin) || Number(cin)!=parseInt(cin) )){
         alert("CIN n'est pas valide")
+        //return false
     }
 
     let nom = document.getElementById("nom").value
     let prenom = document.getElementById("prenom").value
-    let np = nom + " " + prenom
-    if(isNaN(np) == false || nom.length < 3 || prenom.length < 3){
+    let np = nom  + prenom
+    
+    
+    if ( !ver(np)  || nom.length < 3 || prenom.length < 3 ){
         alert("Nom ou prenom n'est pas valide")
+        
     }
 
 
     let email = document.getElementById("email").value
-    v = "AEYUIO"
+    const  v = "AEYUIO"
     if (v.indexOf(email[0]) == -1 || email.indexOf("@") == -1){
         alert("email invalid")
 
     }
 
-    if (!choi){
-        alert("Obligatoire de choisir une voiture")
-    }
     let du = document.getElementsByName("du")
 
     somme = 0
+    d=0
+
+    console.log(du[1].value)
+    while (d<du.length && !du[d].checked){
+        d+=1
+
+    }
+    if (d == du.length){
+        alert("choisir une duree")
+        return false
+    }
+    /* 2eme maniere
     for (let i =0 ; i<du.length;i++){
         if (du[i].checked){
-            window.somme += Number(du[i].value)
+            somme += Number(du[i].value)
         }
     }
         if (somme == 0){
         alert("il faut choisir la duree")
-    }
+    }*/
+   ///////////////////////////// nrw7 nchoufha
+    let choixx = document.getElementById("choixx")
+    console.log("Choix: "+choixx.selectedIndex)
+    if ( choixx.selectedIndex == -1 ){
+        alert("Il faut choisir une voiture")
+    // return false
+    document.getElementById("mont").value = prix() 
+
+}
+    
 }
 
-function choi(){
-
-    return true
-}
-
+function prix(){
+    let somme =0;
+    let du = document.getElementsByName("du")
+    let prix = document.getElementById("mont")
+    let choixx = document.getElementById("choixx")
+    
+    if ( choixx.selectedIndex == -1 ){
+        alert("Il faut choisir une voiture")}
+    else {
+        for (let i =0 ; i<du.length;i++){
+            if (du[i].checked){
+                somme += Number(du[i].value)
+            }}}
+        console.log(choixx)
+    prix.value = somme*choixx.value
+    prix.disabled = true
+    
+        
+    
+    
 
     
+
+    
+        /*for (let i =0 ; i<du.length;i++){
+            if (du[i].checked){
+                somme += Number(du[i].value)
+            }}
+        console.log(somme)
+        console.log(somme*choixx.selectedIndex.value)
+        document.getElementById("mont").value = somme*choixx.selectedIndex.value*/
+
+}
+
+
+function ver(np){
+    let i=0
+    np =  np.toUpperCase()
+
+    while (i<np.length && np[i] >= "A" && np[i]<="Z" ){
+        i++
+    }
+    console.log(np.length == i)
+    return np.length == i
+}
+function chif(np){
+    let i=0
+    while (i<np.length && np[i] >= "0" && np[i]<="9" ){
+        i+=1
+    }
+    return np.length == i
+}
+
