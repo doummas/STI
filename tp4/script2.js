@@ -73,24 +73,11 @@ function prix(){
             }}}
         console.log(choixx)
     prix.value = somme*choixx.value
-    prix.disabled = true
-    
-        
-    
-    
-
-    
-
-    
-        /*for (let i =0 ; i<du.length;i++){
-            if (du[i].checked){
-                somme += Number(du[i].value)
-            }}
-        console.log(somme)
-        console.log(somme*choixx.selectedIndex.value)
-        document.getElementById("mont").value = somme*choixx.selectedIndex.value*/
-
-}
+    prix.readonly = true
+    prix.style.backgroundColor="red"
+    prix.style.color = "blue" 
+    prix.style.fontWeight = "bold"
+    }
 
 
 function ver(np){
