@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="generate()">
     <form action="">
         <label for="">captcha</label>
         <input type="text" name="" id="code" readonly>
         <button type="submit" onclick="generate()">actualiser</button>
         <p>Combien des lettre majuscule en ce text</p>
         <label for="">reponse</label>
-        <input type="text" name="" id="rep"><br>
+        <input type="number" name="" id="rep"><br>
         <button type="reset">annuler</button>
         <button type="submit" onclick="valider()">valider</button>
     </form>
