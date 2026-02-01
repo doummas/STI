@@ -98,3 +98,40 @@ function chif(np){
     return np.length == i
 }
 
+function aff_date(){
+    let d=new Date()
+    let da = String(d.getDate())
+    if (Number(da)<10){
+        da = "0" + String(da)
+
+    }
+    let m = String(d.getMonth()+1)
+    if (Number(m)<10){
+        m = "0" + String(m)
+
+    }
+    console.log(((d.getDate()))+ "-" +((d.getMonth())) + "-" + String(d.getFullYear()) )
+    console.log( String(d.getFullYear()  + "-" +(m) + "-" + (da) ))
+    document.getElementById("dt").value = ( String(d.getFullYear()  + "-" +(m) + "-" + (da)))
+    document.getElementById("dt").readonly = true
+}
+function generer(){
+    l=[]
+    let ca=document.getElementById('ca')
+    /*for (let i = 65;i<91;i++){
+        l +=(String.fromCharCode(i))
+    }
+    for (let i = 97; i<123 ; i++){
+        l += (String.fromCharCode(i))
+    }
+    console.log(l)
+    for (let i = 0;i<10;i++ ){
+        ca.value += l[Math.round(Math.random() *l.length )]
+    }   
+    ca.disabled = true*/
+    for (let i =0; i<10;i++){
+        ca.value += String.fromCharCode(Math.round(97+Math.random() * (122-97) - (32 * Math.round(Math.random()))))
+    }
+    console.log(Math.round(97+Math.random() * (122-97) - (32 * Math.round(Math.random()))))
+    console.log(97+Math.random() * (122-97))
+}

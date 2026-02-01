@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="aff_date()">
     <form action="" method="">
         <fieldset>
             <legend>Cordonnees</legend>
@@ -70,7 +70,7 @@
             <table>
                 <tr>
                     <td>Generer un code Captcha</td>
-                    <td><input type="text" name="" id=""></td>
+                    <td><input type="text" name="" id="ca" onfocus="generer()"></td>
                 </tr>
                 <tr>
                     <td><button type="submit" onclick="valider()">Valider</button></td>
