@@ -1,0 +1,20 @@
+#in_body,#a_body{
+    background-color: purple;
+}
+#in{
+    background-color: violet;
+    width: 50%;
+    margin: 0 auto;
+}
+input, button{
+    border-color: green;
+}
+#net{
+    background-color: violet;
+    border-radius: 10%;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+
+
+}

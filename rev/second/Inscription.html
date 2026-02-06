@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body id="in_body">
+    <!--<form action="">--->
+        <div id="in">
+            <fieldset >
+                <legend>Inscription</legend>
+                <table>
+                    <tr>
+                        <td><label for="">cin</label></td>
+                        <td><input type="text" name="" id="cin"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Nom et prenom</label></td>
+                        <td><input type="text" name="" id="np"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Date de naissance</label></td>
+                        <td><input type="date" name="" id="dt"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">email</label></td>
+                        <td><input type="email" name="" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">password</label></td>
+                        <td><input type="password" name="" id="ps"></td>
+                        <td><span id="sp"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Confirmation</label></td>
+                        <td><input type="password" id="conf"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">activiter sportive</label></td>
+                        <td><select name="" id="sport">
+                            <option value="">choisir</option>
+                            <option value="">Gymnastique</option>
+                            <option value="">karate</option>
+                        </select></td>
+                    </tr>
+                </table>
+                <button type="submit" onclick="valider()">S'inscrire</button>
+                <button type="reset">Annuler</button>
+            </fieldset>
+        </div>
+    <!--</form>-->
+    <script src="in_script.js"></script>
+</body>
+</html>
