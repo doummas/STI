@@ -1,7 +1,7 @@
 function valider(){
     let v =0
     let cin = document.getElementById("cin").value
-    console.log(cin.length!=8 || (cin[0] != "0" || cin[0] != "1"))
+    console.log(cin.length!=8 || (cin[0] != "0" && cin[0] != "1"))
     if (cin.length!=8 || (cin[0] != "0" && cin[0] != "1") ){
         alert("cin non valide")
         return false
