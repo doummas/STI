@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Sondage</legend>
+        <h3>Authentication / Inscription:</h3>
+        <table>
+            <tr>
+                <td><label for="">@Mail </label></td>
+                <td><input type="email" name="" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="">Mot de passe</label></td>
+                <td><input type="password" name="" id="pass"></td>
+            </tr>
+            <tr>
+                <td><label for="">genre</label></td>
+                <td>
+                    <select name="" id="genre">
+                        <option value="">choisir votre gens</option>
+                        <option value="">Masculin</option>
+                        <option value="">Feminin</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <h3>Les reseaux sociaux:</h3>
+        <table>
+            <tr>
+                <td><h4>N4</h4></td>
+                <td><h4>Question/affirmation</h4></td>
+                <td><h4>Oui</h4></td>
+                <td><h4>Non</h4></td>
+                <td><h4>Sans avis</h4></td>
+            </tr>
+            <tr>
+                <td><label for="">1-</label></td>
+                <td><label for="">Les inforamtion partager sur les reseaux sociaux sont fiables</label></td>
+                <td><input type="radio" name="inf1" id="" value="10"></td>
+                <td><input type="radio" name="inf1" id="" value="1N"></td>
+                <td><input type="radio" name="inf1" id="" value="1S"></td>
+            </tr>
+            <tr>
+                <td><label for=""></label>2-</td>
+                <td><label for=""></label>l'usage de reseuax sociaux par les enfant doit etre sous le controle parental</td>
+                <td><input type="radio" name="inf2" id="" value="20"></td>
+                <td><input type="radio" name="inf2" id="" value="2N"></td>
+                <td><input type="radio" name="inf2" id="" value="2S"></td>
+            </tr>
+            <tr>
+                <td><label for="">3-</label></td>
+                <td><label for="">Les reseuax sociaux deviennent une necessite par les citoyens </label></td>
+                <td><input type="radio" name="inf3" id="" value="30"></td>
+                <td><input type="radio" name="inf3" id="" value="3N"></td>
+                <td><input type="radio" name="inf3" id="" value="3S"></td>
+            </tr>
+            
+        </table>
+        <button type="submit" onclick="test()">envoyer</button>
+        <button type="reset">annuler</button>
+
+    </fieldset>
+    <script src="script.js"></script>
+</body>
+</html>
