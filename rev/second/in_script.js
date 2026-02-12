@@ -1,14 +1,15 @@
 function valider(){
     let v =0
     let cin = document.getElementById("cin").value
-    if (cin.length!=8 && (cin[0] != "0" || cin[0] != "1") ){
+    console.log(cin.length!=8 || (cin[0] != "0" || cin[0] != "1"))
+    if (cin.length!=8 || (cin[0] != "0" && cin[0] != "1") ){
         alert("cin non valide")
         return false
     }
     let np = document.getElementById("np").value.toUpperCase()
     console.log()
     
-    if ((val_np(np)) || np.length>50 || !("A"<=np[0] || np[0]<="Z" )|| !("A"<=np[np.length-1] || np[np.length-1]<="Z" ) ){
+    if ((val_np(np)) || np.length>50 || !("A"<=np[0] && np[0]<="Z" )|| !("A"<=np[np.length-1] && np[np.length-1]<="Z" ) ){
         alert("Nom et prenom non valide")
         return false
     }
